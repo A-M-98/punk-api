@@ -1,0 +1,9 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.card {
+    background-color: $color-primary;
+    height: 20rem;
+    width: 12rem;
+    margin-top: 2rem;
+    color: white;
+}
