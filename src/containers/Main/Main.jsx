@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Main.scss'
 import CardList from '../CardList/CardList'
 
 
@@ -19,7 +20,7 @@ const Main = () => {
 
   return (
     <div className='main'>
-        <CardList beerArr={beerArr}/>
+      <CardList beerArr={beerArr}/>
     </div>
   )
 }

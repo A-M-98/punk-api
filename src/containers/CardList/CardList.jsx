@@ -1,4 +1,5 @@
 import React from 'react'
+import './CardList.scss'
 import Card from '../../components/Card/Card'
 
 const CardList = (props) => {
@@ -12,7 +13,9 @@ const CardList = (props) => {
           <Card 
           image={beer.image_url} 
           name={beer.name} 
-          description={beer.description}/>
+          description={beer.description}
+          abv={beer.abv}
+          />
         )
       })
       }

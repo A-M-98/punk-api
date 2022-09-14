@@ -2,8 +2,30 @@
 
 .card {
     background-color: $color-primary;
-    height: 20rem;
-    width: 12rem;
+    height: 40rem;
+    width: 16rem;
     margin-top: 2rem;
-    color: white;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image-container {
+        width: 14rem;
+        height: 18rem;
+        background-color: $color-white;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image {
+        width: auto;
+        height: 17rem;
+    }
+
+    &__abv {
+        border-radius: 10px;
+    }
 }
