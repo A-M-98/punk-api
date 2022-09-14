@@ -1,12 +1,12 @@
 import React from 'react'
 import './SearchBox.scss'
 
-const SearchBox = () => {
+const SearchBox = ({getBeerSearch}) => {
   return (
     <input 
     className='input'
     type="text" 
-    onChange={}
+    onChange={getBeerSearch}
     />
   )
 }

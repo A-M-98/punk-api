@@ -1,7 +1,5 @@
 @use "../../assets/sass/_variables.scss" as *;
 
 .main {
-    // display: flex;
-    // flex-direction: row;
-    // // grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid $color-primary;
 }

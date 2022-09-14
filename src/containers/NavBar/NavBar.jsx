@@ -1,8 +1,11 @@
 import React from 'react'
+import SearchBox from '../../components/SearchBox/SearchBox'
 
-const NavBar = () => {
+const NavBar = ({getBeerSearch}) => {
   return (
-    <div className='navbar'>NavBar</div>
+    <div className='navbar'>
+      <SearchBox getBeerSearch={getBeerSearch}/>
+    </div>
   )
 }
 
