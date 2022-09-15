@@ -6,15 +6,16 @@ import NavBar from './containers/NavBar/NavBar';
 
 function App() {
 
-  const [searchBear, setSearchBeer] = useState("");
+  const [searchBeer, setSearchBeer] = useState("");
   const getBeerSearch = (event) => {
     setSearchBeer(event.target.value)
+    console.log(getBeerSearch);
   }
 
   return (
     <div className="app">
      <NavBar getBeerSearch={getBeerSearch}/>
-     <Main searchBear={searchBear}/>
+     <Main searchBeer={searchBeer}/>
     </div>
   );
 }

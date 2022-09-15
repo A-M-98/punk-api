@@ -3,8 +3,12 @@ import './CardList.scss'
 import Card from '../../components/Card/Card'
 
 const CardList = (props) => {
-    const { beerArr } = props;
+    const { beerArr, searchBeer } = props;
     // const exampleBeer = beerArr[0]
+
+    const filterCards = (beerArr, searchBeer) => {
+      return beerArr.filter((beer)=> beer.name.toLowerCase().includes(searchBeer.toLowerCase()))
+    }
 
   return (
     <div className='card-list'>

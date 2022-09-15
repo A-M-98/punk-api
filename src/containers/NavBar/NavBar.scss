@@ -1,0 +1,16 @@
+@use "../../assets/sass/variables.scss" as *;
+
+.navbar {
+    height: 5rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: $color-secondary;
+    justify-content: space-between;
+    align-items: center;
+
+    &__image {
+        height: 4rem;
+        width: auto;
+    }
+}

@@ -6,7 +6,7 @@ const SearchBox = ({getBeerSearch}) => {
     <input 
     className='input'
     type="text" 
-    onChange={getBeerSearch}
+    onInput={getBeerSearch}
     />
   )
 }
