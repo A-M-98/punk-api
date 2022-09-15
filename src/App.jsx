@@ -8,8 +8,7 @@ function App() {
 
   const [searchBeer, setSearchBeer] = useState("");
   const getBeerSearch = (event) => {
-    setSearchBeer(event.target.value)
-    console.log(getBeerSearch);
+    setSearchBeer(event.target.value);
   }
 
   return (
