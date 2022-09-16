@@ -27,9 +27,19 @@
     }
 
     &__abv {
+        margin-top: 2rem;
+    }
+
+    &__button {
         border-radius: 10px;
         border: 2px solid $color-secondary;
         background-color: $color-white;
         color: $color-black;
+    }
+
+    &__description {
+        height: 10rem;
+        width: 16rem;
+        overflow: scroll;
     }
 }

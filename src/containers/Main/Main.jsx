@@ -4,7 +4,7 @@ import CardList from '../CardList/CardList'
 
 
 
-const Main = ({searchBeer}) => {
+const Main = ({searchBeer, checkedArr}) => {
   const [beerArr, setBeerArr] = useState([]);
 
   
@@ -13,6 +13,15 @@ const Main = ({searchBeer}) => {
     const data = await res.json()
     console.log(data);
     setBeerArr(data);
+  }
+
+  const filteredBeers = () => {
+    if (checkedArr.includes("high-abv") && checkedArr.includes("classic-range") && checkedArr.includes("acidic")) {
+      const checkedBeers = beerArr.filter((beer) => {
+        if (beer) {
+        }
+      })
+    }
   }
 
   useEffect(() => {
