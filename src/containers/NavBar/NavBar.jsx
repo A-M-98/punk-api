@@ -4,13 +4,13 @@ import SearchBox from '../../components/SearchBox/SearchBox'
 import logo from '../../assets/images/brewdog-logo.png'
 import FilterList from '../FilterList/FilterList'
 
-const NavBar = ({getBeerSearch, handleChecked}) => {
+const NavBar = ({getBeerSearch, handleAbv, handleClassic, handleAcidic}) => {
   return (
     <div className='navbar'>
       <img className='navbar__image' src={logo} alt="BREWDOG" />
       <SearchBox getBeerSearch={getBeerSearch}/>
       <div className='filters-container'>
-      <FilterList handleChecked={handleChecked}/>
+      <FilterList handleAbv={handleAbv} handleClassic={handleClassic} handleAcidic={handleAcidic}/>
       </div>
     </div>
   )

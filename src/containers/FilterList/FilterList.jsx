@@ -2,10 +2,10 @@ import React from 'react'
 import FilterItems from '../../components/FilterItems/FilterItems'
 import './FilterList.scss'
 
-const FilterList = ({handleChecked}) => {
+const FilterList = ({handleAbv, handleClassic, handleAcidic}) => {
   return (
     <div>
-      <FilterItems handleChecked={handleChecked}/>
+      <FilterItems handleAbv={handleAbv} handleClassic={handleClassic} handleAcidic={handleAcidic}/>
     </div>
   )
 }

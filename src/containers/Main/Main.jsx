@@ -4,29 +4,26 @@ import CardList from '../CardList/CardList'
 
 
 
-const Main = ({searchBeer, checkedArr}) => {
+const Main = ({searchBeer, url, acidic}) => {
   const [beerArr, setBeerArr] = useState([]);
 
+  // const [url, setUrl] = useState("https://api.punkapi.com/v2/beers?page=1&per_page=80")
   
   const getData = async() => {
-    const res = await fetch("https://api.punkapi.com/v2/beers?page=1&per_page=80")
+    const res = await fetch(url)
     const data = await res.json()
     console.log(data);
     setBeerArr(data);
   }
 
-  const filteredBeers = () => {
-    if (checkedArr.includes("high-abv") && checkedArr.includes("classic-range") && checkedArr.includes("acidic")) {
-      const checkedBeers = beerArr.filter((beer) => {
-        if (beer) {
-        }
-      })
-    }
-  }
-
   useEffect(() => {
-    getData()
-  },[])
+    if (!acidic) {
+      getData()
+    } else {
+      const acidicBeers = beerArr.filter((beer) => beer.ph < 4)
+      setBeerArr(acidicBeers)
+    }
+  },[url, acidic])
 
 
   return (
