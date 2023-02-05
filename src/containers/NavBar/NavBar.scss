@@ -2,7 +2,9 @@
 
 .navbar {
     height: 5rem;
+    width: auto;
     padding: 10px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     background-color: $color-secondary;
@@ -14,3 +16,12 @@
         width: auto;
     }
 }
+
+@media (max-width: 700px) {
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 100vw;
+    }
+  }

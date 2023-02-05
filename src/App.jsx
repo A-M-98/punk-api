@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="app">
-     <NavBar getBeerSearch={getBeerSearch} handleAbv={handleAbv} handleClassic={handleClassic} handleAcidic={handleAcidic}/>
+     <NavBar className="nav" getBeerSearch={getBeerSearch} handleAbv={handleAbv} handleClassic={handleClassic} handleAcidic={handleAcidic}/>
      <Main searchBeer={searchBeer} url={url} acidic={acidic}/>
     </div>
   );
